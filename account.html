@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>غاوية</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/library/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/library/bootstrap/bootstrap.min.css.map">
+    <link rel="stylesheet" href="assets/library/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/library/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/library/font-awesome/all.min.css">
+    <link rel="stylesheet" href="assets/library/select2/select2.min.css">
+    <link rel="stylesheet" href="assets/library/noUiSlider/nouislider.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="assets/images/logo-white.png" height="50" class="logo" alt="Ghawya Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/logo-main.png" height="50" alt="Ghawya Logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3 gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">معلومات عنا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/shop.html">المتجر</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact.html">اتصل بنا</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav align-items-center justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/wishlist.html">
+                                    <i class="material-icons-outlined">favorite_border</i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/account.html">
+                                    <span class="material-icons-outlined">account_circle</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cart.html">
+                                    <i class="material-icons-outlined">shopping_cart</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <main class="page_header">
+        <div class="container">
+            <div class="page_header_inner">
+                <h4 class="page_title">
+                    الملف الشخصي
+                </h4>
+                <div class="breadcrumb">
+                    <a href="/index.html">الرئيسية</a>
+                    <i class="material-icons-outlined">chevron_left</i>
+                    <span>الملف الشخصي</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Profile Tabs -->
+    <section class="profile_inner">
+        <div class="container">
+            <div class="vertical_tabs_wrapper">
+                <ul class="nav tabs_nav_wrapper vertical" id="myTab" role="tablist">
+                    <button class="link_button active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">الملف الشخصي</button>
+                    <button class="link_button" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders" type="button" role="tab" aria-controls="orders" aria-selected="false">الطلبات</button>
+                    <button class="link_button">تسجيل الخروج</button>
+                </ul>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="profile_tab tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="profile_photo">
+                            <img src="assets/images/user.jpg" alt="">
+                        </div>
+                        <form class="details_form">
+                            <div class="input_group">
+                                <label>الاسم بالكامل</label>
+                                <input type="text" name="full_name" placeholder="الاسم">
+                            </div>
+                            <div class="input_group">
+                                <label>رقم التليفون</label>
+                                <input type="text" name="phone" placeholder="0100000000">
+                            </div>
+                            <div class="input_group">
+                                <label>العنوان</label>
+                                <input type="text" name="address" placeholder="عنوانك">
+                            </div>
+                            <div class="input_group">
+                                <label>البريد الإلكتروني</label>
+                                <input type="text" name="email" placeholder="info@example.com">
+                            </div>
+                            <div class="input_group">
+                                <label>كلمة المرور</label>
+                                <input type="password" name="password" placeholder="**********">
+                            </div>
+                            <div class="input_group">
+                                <label>تأكيد كلمة المرور</label>
+                                <input type="password" name="password" placeholder="**********">
+                            </div>
+                            <button class="main_button">تحديث البيانات</button>
+                        </form>
+                    </div>
+                    <div class="orders_tab tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab" tabindex="0">
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>الرقم المرجعي</th>
+                                        <th>التاريخ</th>
+                                        <th>الحالة</th>
+                                        <th>الإجمالي</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="order_row">
+                                        <td data-label="الرقم المرجعي">
+                                            <span>#56416511</span>
+                                        </td>
+                                        <td data-label="التاريخ">
+                                            <span>13-4-2025 08:00 AM</span>
+                                        </td>
+                                        <td data-label="الحالة">
+                                            <span>قيد التحضير</span>
+                                        </td>
+                                        <td data-label="الإجمالي">
+                                            <span>200</span> ريال
+                                        </td>
+                                        <td align="center">
+                                            <button class="main_button small" data-bs-toggle="modal" data-bs-target="#order_modal">عرض</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="order_row">
+                                        <td data-label="الرقم المرجعي">
+                                            <span>#6786786</span>
+                                        </td>
+                                        <td data-label="التاريخ">
+                                            <span>09-4-2025 08:00 AM</span>
+                                        </td>
+                                        <td data-label="الحالة">
+                                            <span>جديدة</span>
+                                        </td>
+                                        <td data-label="الإجمالي">
+                                            <span>130</span> ريال
+                                        </td>
+                                        <td align="center">
+                                            <button class="main_button small" data-bs-toggle="modal" data-bs-target="#order_modal">عرض</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="order_row">
+                                        <td data-label="الرقم المرجعي">
+                                            <span>#783545</span>
+                                        </td>
+                                        <td data-label="التاريخ">
+                                            <span>28-4-2025 08:00 AM</span>
+                                        </td>
+                                        <td data-label="الحالة">
+                                            <span>مكتملة</span>
+                                        </td>
+                                        <td data-label="الإجمالي">
+                                            <span>275</span> ريال
+                                        </td>
+                                        <td align="center">
+                                            <button class="main_button small" data-bs-toggle="modal" data-bs-target="#order_modal">عرض</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="order_row">
+                                        <td data-label="الرقم المرجعي">
+                                            <span>#4537638</span>
+                                        </td>
+                                        <td data-label="التاريخ">
+                                            <span>03-4-2025 08:00 AM</span>
+                                        </td>
+                                        <td data-label="الحالة">
+                                            <span>قيد التحضير</span>
+                                        </td>
+                                        <td data-label="الإجمالي">
+                                            <span>500</span> ريال
+                                        </td>
+                                        <td align="center">
+                                            <button class="main_button small" data-bs-toggle="modal" data-bs-target="#order_modal">عرض</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_columns">
+                    <div class="footer_column">
+                        <a class="navbar-brand" href="/index.html">
+                            <img src="assets/images/logo-white.png" height="80" class="logo" alt="Ghawya Logo">
+                        </a>
+                        <p class="brief mt-4">نقدم لكِ عبايات تجمع بين الأصالة والفخامة، مصممة بعناية لتُجسّد ذوقك الراقي وتمنحك حضورًا استثنائيًا في كل مناسبة</p>
+                    </div>
+                    <div class="footer_column">
+                        <div class="title">صفحات مهمة</div>
+                        <div class="links_wrapper">
+                            <a href="#" class="link">الرجوع والاستبدال</a>
+                            <a href="#" class="link">سياسية الخصوصية</a>
+                            <a href="#" class="link">تواصل معنا</a>
+                        </div>
+                    </div>
+                    <div class="footer_column">
+                        <div class="title">حسابي الخاص</div>
+                        <div class="links_wrapper">
+                            <a href="#" class="link">حسابي</a>
+                            <a href="#" class="link">طلباتي</a>
+                            <a href="#" class="link">المفضلة</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_socials">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+                <div class="footer_rights">
+                    جميع الحقوق محفوظة 2025
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="order_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">تفاصيل الطلب</h1>
+                    <i class="material-icons" data-bs-dismiss="modal" aria-label="Close">cancel</i>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>الصورة</th>
+                                    <th>اسم المنتج</th>
+                                    <th>السعر</th>
+                                    <th>الكمية</th>
+                                    <th>الإجمالي</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="product_row">
+                                    <td>
+                                        <div class="product_image">
+                                            <img src="assets/images/p-1.jpg" width="" alt="">
+                                        </div>
+                                    </td>
+                                    <td data-label="اسم المنتج">
+                                        <h1 class="product_title">عباية سوداء تطريز يدوى</h1>
+                                    </td>
+                                    <td data-label="السعر">
+                                        <span>200</span> ريال
+                                    </td>
+                                    <td data-label="الكمية">
+                                        <span>3</span>
+                                    </td>
+                                    <td data-label="الإجمالي">
+                                        <span>600</span> ريال
+                                    </td>
+                                </tr>
+                                <tr class="product_row">
+                                    <td>
+                                        <div class="product_image">
+                                            <img src="assets/images/p-2.jpg" width="" alt="">
+                                        </div>
+                                    </td>
+                                    <td data-label="اسم المنتج">
+                                        <h1 class="product_title">عباية سوداء تطريز يدوى</h1>
+                                    </td>
+                                    <td data-label="السعر">
+                                        <span>120</span> ريال
+                                    </td>
+                                    <td data-label="الكمية">
+                                        <span>3</span>
+                                    </td>
+                                    <td data-label="الإجمالي">
+                                        <span>360</span> ريال
+                                    </td>
+                                </tr>
+                                <tr class="product_row">
+                                    <td>
+                                        <div class="product_image">
+                                            <img src="assets/images/p-1.jpg" width="" alt="">
+                                        </div>
+                                    </td>
+                                    <td data-label="اسم المنتج">
+                                        <h1 class="product_title">عباية سوداء تطريز يدوى</h1>
+                                    </td>
+                                    <td data-label="السعر">
+                                        <span>175</span> ريال
+                                    </td>
+                                    <td data-label="الكمية">
+                                        <span>3</span>
+                                    </td>
+                                    <td data-label="الإجمالي">
+                                        <span>475</span> ريال
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="assets/library/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/library/bootstrap/bootstrap.bundle.min.js.map"></script>
+<script src="assets/library/jquery/jquery-3.7.1.min.js"></script>
+<script src="assets/library/owl-carousel/owl.carousel.min.js"></script>
+<script src="assets/library/font-awesome/all.min.js"></script>
+<script src="assets/library/select2/select2.full.min.js"></script>
+<script src="assets/library/noUiSlider/nouislider.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>

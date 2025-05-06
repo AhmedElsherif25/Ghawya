@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>غاوية</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/library/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/library/bootstrap/bootstrap.min.css.map">
+    <link rel="stylesheet" href="assets/library/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/library/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/library/font-awesome/all.min.css">
+    <link rel="stylesheet" href="assets/library/select2/select2.min.css">
+    <link rel="stylesheet" href="assets/library/noUiSlider/nouislider.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="assets/images/logo-white.png" height="50" class="logo" alt="Ghawya Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/logo-main.png" height="50" alt="Ghawya Logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3 gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">معلومات عنا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/shop.html">المتجر</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact.html">اتصل بنا</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav align-items-center justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/wishlist.html">
+                                    <i class="material-icons-outlined">favorite_border</i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/account.html">
+                                    <span class="material-icons-outlined">account_circle</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cart.html">
+                                    <i class="material-icons-outlined">shopping_cart</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <main class="page_header">
+        <div class="container">
+            <div class="page_header_inner">
+                <h4 class="page_title">
+                    إنشاء حساب
+                </h4>
+                <div class="breadcrumb">
+                    <a href="/index.html">الرئيسية</a>
+                    <i class="material-icons-outlined">chevron_left</i>
+                    <span>إنشاء حساب</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Auth -->
+    <section class="auth">
+        <div class="container">
+            <div class="auth_inner">
+                <span class="form_title">مرحباً بك !</span>
+                <span class="form_subtitle">يرجى ادخال بياناتك لانشاء حساب جديد</span>
+                <form action="" class="form_wrapper">
+                    <div class="input_group">
+                        <label>الاسم بالكامل</label>
+                        <input type="text" name="name" placeholder="ادخل اسمك">
+                    </div>
+                    <div class="input_group">
+                        <label>رقم التليفون</label>
+                        <input type="text" name="phone" placeholder="010000000">
+                    </div>
+                    <div class="input_group">
+                        <label>البريد الالكترونى</label>
+                        <input type="text" name="email" placeholder="info@example.com">
+                    </div>
+                    <div class="input_group">
+                        <label>كلمة المرور</label>
+                        <input type="password" name="password" placeholder="*************">
+                    </div>
+                    <div class="input_group">
+                        <label>تأكيد كلمة المرور</label>
+                        <input type="password" name="confirm_password" placeholder="*************">
+                    </div>
+                    <div class="terms_accept">
+                        <label>
+                            <input hidden type="checkbox" name="terms">
+                            <i class="material-icons"> check </i>
+                            <span> أوافق على جميع <a href="#">الشروط والأحكام</a></span>
+                        </label>
+                    </div>
+                    <div class="submit_wrapper w-100">
+                        <button class="main_button w-100">إنشاء حساب</button>
+                    </div>
+                </form>
+                <div class="has_account">
+                    <span>لديك حساب بالفعل ؟ <a href="login.html">تسجيل الدخول</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_columns">
+                    <div class="footer_column">
+                        <a class="navbar-brand" href="/index.html">
+                            <img src="assets/images/logo-white.png" height="80" class="logo" alt="Ghawya Logo">
+                        </a>
+                        <p class="brief mt-4">نقدم لكِ عبايات تجمع بين الأصالة والفخامة، مصممة بعناية لتُجسّد ذوقك الراقي وتمنحك حضورًا استثنائيًا في كل مناسبة</p>
+                    </div>
+                    <div class="footer_column">
+                        <div class="title">صفحات مهمة</div>
+                        <div class="links_wrapper">
+                            <a href="#" class="link">الرجوع والاستبدال</a>
+                            <a href="#" class="link">سياسية الخصوصية</a>
+                            <a href="#" class="link">تواصل معنا</a>
+                        </div>
+                    </div>
+                    <div class="footer_column">
+                        <div class="title">حسابي الخاص</div>
+                        <div class="links_wrapper">
+                            <a href="#" class="link">حسابي</a>
+                            <a href="#" class="link">طلباتي</a>
+                            <a href="#" class="link">المفضلة</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_socials">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+                <div class="footer_rights">
+                    جميع الحقوق محفوظة 2025
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="assets/library/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/library/bootstrap/bootstrap.bundle.min.js.map"></script>
+<script src="assets/library/jquery/jquery-3.7.1.min.js"></script>
+<script src="assets/library/owl-carousel/owl.carousel.min.js"></script>
+<script src="assets/library/font-awesome/all.min.js"></script>
+<script src="assets/library/select2/select2.full.min.js"></script>
+<script src="assets/library/noUiSlider/nouislider.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
