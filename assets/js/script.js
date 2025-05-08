@@ -43,12 +43,24 @@ $('.categories_carousel').owlCarousel({
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 1
+            items: 1,
+            nav: false,
+            dots: true
         },
-        600: {
-            items: 3
+        480: {
+            items: 2,
+            nav: false,
+            dots: true
         },
-        1000: {
+        992: {
+            items: 3,
+            nav: false,
+            dots: true
+        },
+        1200: {
+            items: 4
+        },
+        1440: {
             items: 5
         }
     }
@@ -69,12 +81,16 @@ $('.products_carousel').owlCarousel({
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 1
+            items: 1,
+            nav: false,
+            dots: true
         },
-        600: {
-            items: 2
+        768: {
+            items: 2,
+            nav: false,
+            dots: true
         },
-        1000: {
+        1200: {
             items: 3
         }
     }
@@ -152,7 +168,7 @@ for (var i = 0; i < increaseBtn.length; i++) {
     });
 }
 
-// car Calculations
+// Cart Calculations
 function calcCart() {
     var products = document.querySelectorAll('.product_row');
     var cartTotal = 0;
@@ -187,7 +203,7 @@ function showStep(index) {
     steps.forEach((step, i) => step.classList.toggle("active", i === index));
     prevBtn.style.display = index > 0 ? "block" : "none";
     nextBtn.textContent = index === steps.length - 2 ? "تاكيد الطلب" : "التالي";
-    progress.style.width = `${((index) / (steps.length - 1)) * 100}%`;
+    window.innerWidth > 576 ? progress.style.width = `${((index) / (steps.length - 1)) * 100}%` : progress.style.height = `${((index) / (steps.length - 1)) * 100}%`;
     if (index === steps.length - 1) {
         homeBtn.style.display = "block"
         nextBtn.style.display = "none"

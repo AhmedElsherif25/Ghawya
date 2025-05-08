@@ -19,6 +19,24 @@
 </head>
 
 <body>
+    <!-- Pre-Loader -->
+    <div id="preloader">
+        <svg id="logo" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.4 49">
+            <g id="Layer_1-2" data-name="Layer 1">
+                <path class="cls-1"
+                    d="M83.99,20.92v13.81h11.4v4.87h-29.55V4.87H4.93v37.02h22.16v4.87H0V0h70.77v34.73h8.29v-18.67h16.34v4.86h-11.4Z" />
+                <path class="cls-1"
+                    d="M40.08,16.06v23.33h-19.25v-18.47h-8.1v13.6h4.66v4.87H7.88v-23.33h17.82v18.46h9.52v-18.46h4.87Z" />
+                <path class="cls-1"
+                    d="M62.75,16.06v32.94h-16v-4.87h11.13v-4.74h-14.68v-23.33h19.55ZM57.88,34.52v-13.6h-9.82v13.6h9.82Z" />
+                <path class="cls-1" d="M30.14,46.76h4.4v-4.87h-4.4v4.87Z" />
+                <path class="cls-1" d="M35.93,46.76h4.28v-4.87h-4.28v4.87Z" />
+                <path class="cls-1" d="M11.89,12.9h4.4v-4.87h-4.4v4.87Z" />
+                <path class="cls-1" d="M17.55,12.9h4.4v-4.87h-4.4v4.87Z" />
+                <path class="cls-1" d="M84.7,12.9h4.4v-4.87h-4.4v4.87Z" />
+            </g>
+        </svg>
+    </div>
 
     <!-- Header -->
     <header class="header">
@@ -28,7 +46,7 @@
                     <img src="assets/images/logo-white.png" height="50" class="logo" alt="Ghawya Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="material-icons"> sort </i>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -46,13 +64,13 @@
                                 <a class="nav-link" href="/about.html">معلومات عنا</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/shop.html">المتجر</a>
+                                <a class="nav-link" href="/shop.html">المتجر</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/contact.html">اتصل بنا</a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav align-items-center justify-content-end flex-grow-1">
+                        <ul class="navbar-nav navbar-icons align-items-center justify-content-end flex-grow-1">
                             <li class="nav-item">
                                 <a class="nav-link" href="/wishlist.html">
                                     <i class="material-icons-outlined">favorite_border</i>
@@ -64,7 +82,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/cart.html">
+                                <a class="nav-link active" aria-current="page" href="/cart.html">
                                     <i class="material-icons-outlined">shopping_cart</i>
                                 </a>
                             </li>
@@ -118,7 +136,7 @@
                     <div class="step active">
                         <div class="step_title">
                             <h2>عنوان التوصيل</h2>
-                            <button class="main_button small">إضافة</button>
+                            <button type="button" class="main_button small" data-bs-toggle="modal" data-bs-target="#add_address_modal">إضافة</button>
                         </div>
                         <div class="adresses_wrapper">
                             <label class="address">
@@ -259,6 +277,47 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="add_address_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">اضافة عنوان جديد</h1>
+                    <i class="material-icons" data-bs-dismiss="modal" aria-label="Close">cancel</i>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form_wrapper">
+
+                        <div class="input_group">
+                            <label>الاسم بالكامل</label>
+                            <input type="text" name="name" placeholder="ادخل اسمك">
+                        </div>
+                        <div class="input_group">
+                            <label>رقم التليفون</label>
+                            <input type="text" name="phone" placeholder="010000000">
+                        </div>
+                        <div class="input_group">
+                            <label>المدينة</label>
+                            <input type="text" name="name" placeholder="اختر المدينة">
+                        </div>
+                        <div class="input_group">
+                            <label>البريد الالكترونى</label>
+                            <input type="text" name="email" placeholder="info@example.com">
+                        </div>
+                        <div class="input_group">
+                            <label>العنوان بالكامل</label>
+                            <input type="text" name="name" placeholder="ادخل عنوانك">
+                        </div>
+                        <div class="submit_wrapper w-100">
+                            <button class="main_button">إضافة</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="assets/library/bootstrap/bootstrap.bundle.min.js"></script>

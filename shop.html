@@ -27,7 +27,7 @@
                     <img src="assets/images/logo-white.png" height="50" class="logo" alt="Ghawya Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="material-icons"> sort </i>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -51,7 +51,7 @@
                                 <a class="nav-link" href="/contact.html">اتصل بنا</a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav align-items-center justify-content-end flex-grow-1">
+                        <ul class="navbar-nav navbar-icons align-items-center justify-content-end flex-grow-1">
                             <li class="nav-item">
                                 <a class="nav-link" href="/wishlist.html">
                                     <i class="material-icons-outlined">favorite_border</i>
@@ -94,140 +94,165 @@
     <section class="products">
         <div class="container">
             <div class="products_inner">
+
                 <!-- Filter -->
-                <div class="filter">
-                    <div class="filter_box">
-                        <div class="title">التصنيفات</div>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <div class="icon me-2">
-                                            <i class="material-icons">remove</i>
-                                            <i class="material-icons">remove</i>
+                <div class="filter offcanvas-xl offcanvas-end" tabindex="-1" id="offcanvasFilter" aria-labelledby="offcanvasFilterLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasFilterLabel">فلتر</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasFilter" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="filter">
+                            <div class="filter_box">
+                                <div class="title">التصنيفات</div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="icon me-2">
+                                                    <i class="material-icons">remove</i>
+                                                    <i class="material-icons">remove</i>
+                                                </div>
+                                                عبايات ملونة
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <label>
+                                                    <input hidden type="checkbox" name="filterOne"> عبايات تطريز
+                                                    يدوى
+                                                </label>
+                                                </label>
+                                                <label>
+                                                    <input hidden type="checkbox" name="filterOne"> عبايات ملونة
+                                                </label>
+                                            </div>
                                         </div>
-                                        عبايات ملونة
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <label>
-                                            <input hidden type="checkbox" name="filterOne"> عبايات تطريز يدوى </label>
-                                        </label>
-                                        <label>
-                                            <input hidden type="checkbox" name="filterOne"> عبايات ملونة
-                                        </label>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="icon me-2">
+                                                    <i class="material-icons">remove</i>
+                                                    <i class="material-icons">remove</i>
+                                                </div>
+                                                عبايات سوداء
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <label>
+                                                    <input hidden type="checkbox" name="filterTwo"> عبايات تطريز
+                                                    يدوى
+                                                </label>
+                                                <label>
+                                                    <input hidden type="checkbox" name="filterTwo"> عبايات سوداء
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                <div class="icon me-2">
+                                                    <i class="material-icons">remove</i>
+                                                    <i class="material-icons">remove</i>
+                                                </div>
+                                                عبايات تطريز يدوى
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <label>
+                                                    <input hidden type="checkbox" name="filterThree"> عبايات تطريز
+                                                    يدوى
+                                                    سوداء
+                                                </label>
+                                                <label>
+                                                    <input hidden type="checkbox" name="filterThree"> عبايات تطريز
+                                                    يدوى
+                                                    ملونة
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <div class="icon me-2">
-                                            <i class="material-icons">remove</i>
-                                            <i class="material-icons">remove</i>
+                            <div class="filter_box">
+                                <div class="title">السعر</div>
+                                <div class="price_slider_wrapper">
+                                    <div id="price-slider"></div>
+                                    <div class="inputs_wrapper">
+                                        <div class="input_group">
+                                            <label for="min-input">من</label>
+                                            <input type="number" id="min-input" value="100" min="0" max="1000" step="10">
                                         </div>
-                                        عبايات سوداء
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <label>
-                                            <input hidden type="checkbox" name="filterTwo"> عبايات تطريز يدوى </label>
-                                        <label>
-                                            <input hidden type="checkbox" name="filterTwo"> عبايات سوداء
-                                        </label>
+                                        -
+                                        <div class="input_group">
+                                            <label for="max-input">إلى</label>
+                                            <input type="number" id="max-input" value="900" min="0" max="1000" step="10">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        <div class="icon me-2">
-                                            <i class="material-icons">remove</i>
-                                            <i class="material-icons">remove</i>
-                                        </div>
-                                        عبايات تطريز يدوى
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <label>
-                                            <input hidden type="checkbox" name="filterThree"> عبايات تطريز يدوى سوداء
-                                        </label>
-                                        <label>
-                                            <input hidden type="checkbox" name="filterThree"> عبايات تطريز يدوى ملونة
-                                        </label>
-                                    </div>
+                            <div class="filter_box">
+                                <div class="title">المقاس</div>
+                                <div class="filters_wrapper">
+                                    <label class="size_filter">
+                                        <input hidden type="checkbox" name="sizes">
+                                        xl
+                                    </label>
+                                    <label class="size_filter">
+                                        <input hidden type="checkbox" name="sizes">
+                                        xxl
+                                    </label>
+                                    <label class="size_filter">
+                                        <input hidden type="checkbox" name="sizes">
+                                        3xl
+                                    </label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="filter_box">
-                        <div class="title">السعر</div>
-                        <div class="price_slider_wrapper">
-                            <div id="price-slider"></div>
-                            <div class="inputs_wrapper">
-                                <div class="input_group">
-                                    <label for="min-input">من</label>
-                                    <input type="number" id="min-input" value="100" min="0" max="1000" step="10">
-                                </div>
-                                -
-                                <div class="input_group">
-                                    <label for="max-input">إلى</label>
-                                    <input type="number" id="max-input" value="900" min="0" max="1000" step="10">
+                            <div class="filter_box">
+                                <div class="title">الألوان</div>
+                                <div class="filters_wrapper">
+                                    <label class="color_filter" style="--c: rgba(0, 0, 0, 1)">
+                                        <input hidden type="checkbox" name="colors">
+                                    </label>
+                                    <label class="color_filter" style="--c: rgba(255, 255, 255, 1)">
+                                        <input hidden type="checkbox" name="colors">
+                                    </label>
+                                    <label class="color_filter" style="--c: rgba(48, 155, 248, 1)">
+                                        <input hidden type="checkbox" name="colors">
+                                    </label>
+                                    <label class="color_filter" style="--c: rgb(207, 150, 159, 1)">
+                                        <input hidden type="checkbox" name="colors">
+                                    </label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="filter_box">
-                        <div class="title">المقاس</div>
-                        <div class="filters_wrapper">
-                            <label class="size_filter">
-                                <input hidden type="checkbox" name="sizes">
-                                xl
-                            </label>
-                            <label class="size_filter">
-                                <input hidden type="checkbox" name="sizes">
-                                xxl
-                            </label>
-                            <label class="size_filter">
-                                <input hidden type="checkbox" name="sizes">
-                                3xl
-                            </label>
-                        </div>
-                    </div>
-                    <div class="filter_box">
-                        <div class="title">الألوان</div>
-                        <div class="filters_wrapper">
-                            <label class="color_filter" style="--c: rgba(0, 0, 0, 1)">
-                                <input hidden type="checkbox" name="colors">
-                            </label>
-                            <label class="color_filter" style="--c: rgba(255, 255, 255, 1)">
-                                <input hidden type="checkbox" name="colors">
-                            </label>
-                            <label class="color_filter" style="--c: rgba(48, 155, 248, 1)">
-                                <input hidden type="checkbox" name="colors">
-                            </label>
-                            <label class="color_filter" style="--c: rgb(207, 150, 159, 1)">
-                                <input hidden type="checkbox" name="colors">
-                            </label>
                         </div>
                     </div>
                 </div>
+
                 <!-- Products Grid -->
                 <div class="products_grid">
-                    <select class="sorting_select" name="sort" style="width: 250px">
-                        <option></option>
-                        <option value="h_price">الأعلى سعراً</option>
-                        <option value="l_price">الأقل سعراً</option>
-                        <option value="h_rate">الأعلى تقييماً</option>
-                        <option value="l_rate">الأقل تقييماً</option>
-                    </select>
+                    <div class="filter_buttons_wrapper">
+                        <select class="sorting_select" name="sort" style="width: 250px">
+                            <option></option>
+                            <option value="h_price">الأعلى سعراً</option>
+                            <option value="l_price">الأقل سعراً</option>
+                            <option value="h_rate">الأعلى تقييماً</option>
+                            <option value="l_rate">الأقل تقييماً</option>
+                        </select>
+                        <button class="filter_toggler d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilter" aria-controls="offcanvasFilter">
+                            <i class="material-icons"> sort </i> فلتر
+                        </button>
+                    </div>
                     <div class="products_wrapper">
-                        <a href="/single-product.html" class="product_card">
+                        <div class="product_card">
                             <div class="product_image">
-                                <img src="assets/images/p-1.jpg" alt="">
+                                <a href="./single-product.html">
+                                    <img src="assets/images/p-1.jpg" alt="">
+                                </a>
                                 <div class="product_actions">
                                     <button class="action">
                                         <i class="material-icons">shopping_cart</i>
@@ -235,13 +260,15 @@
                                     <button class="action">
                                         <i class="material-icons">favorite</i>
                                     </button>
-                                    <button class="action">
+                                    <button class="action" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
                                         <i class="material-icons">visibility</i>
                                     </button>
                                 </div>
                             </div>
                             <div class="product_text">
-                                <h1 class="product_title">عباية سوداء تطريز يدوى</h1>
+                                <a href="./single-product.html">
+                                    <h1 class="product_title">عباية سوداء تطريز يدوى</h1>
+                                </a>
                                 <div class="rating">
                                     <i class="material-icons">star</i>
                                     <i class="material-icons">star</i>
@@ -251,10 +278,12 @@
                                 </div>
                                 <div class="price">200 ريال</div>
                             </div>
-                        </a>
-                        <a href="/single-product.html" class="product_card">
+                        </div>
+                        <div class="product_card">
                             <div class="product_image">
-                                <img src="assets/images/p-2.jpg" alt="">
+                                <a href="./single-product.html">
+                                    <img src="assets/images/p-2.jpg" alt="">
+                                </a>
                                 <div class="product_actions">
                                     <button class="action">
                                         <i class="material-icons">shopping_cart</i>
@@ -262,13 +291,15 @@
                                     <button class="action">
                                         <i class="material-icons">favorite</i>
                                     </button>
-                                    <button class="action">
+                                    <button class="action" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
                                         <i class="material-icons">visibility</i>
                                     </button>
                                 </div>
                             </div>
                             <div class="product_text">
-                                <h1 class="product_title">عباية ملونة تطريز يدوى</h1>
+                                <a href="./single-product.html">
+                                    <h1 class="product_title">عباية ملونة تطريز يدوى</h1>
+                                </a>
                                 <div class="rating">
                                     <i class="material-icons">star</i>
                                     <i class="material-icons">star</i>
@@ -278,10 +309,12 @@
                                 </div>
                                 <div class="price">279 ريال</div>
                             </div>
-                        </a>
-                        <a href="/single-product.html" class="product_card">
+                        </div>
+                        <div class="product_card">
                             <div class="product_image">
-                                <img src="assets/images/p-1.jpg" alt="">
+                                <a href="./single-product.html">
+                                    <img src="assets/images/p-2.jpg" alt="">
+                                </a>
                                 <div class="product_actions">
                                     <button class="action">
                                         <i class="material-icons">shopping_cart</i>
@@ -289,13 +322,15 @@
                                     <button class="action">
                                         <i class="material-icons">favorite</i>
                                     </button>
-                                    <button class="action">
+                                    <button class="action" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
                                         <i class="material-icons">visibility</i>
                                     </button>
                                 </div>
                             </div>
                             <div class="product_text">
-                                <h1 class="product_title">عباية سوداء تطريز يدوى</h1>
+                                <a href="./single-product.html">
+                                    <h1 class="product_title">عباية سوداء تطريز يدوى</h1>
+                                </a>
                                 <div class="rating">
                                     <i class="material-icons">star</i>
                                     <i class="material-icons">star</i>
@@ -305,10 +340,12 @@
                                 </div>
                                 <div class="price">200 ريال</div>
                             </div>
-                        </a>
-                        <a href="/single-product.html" class="product_card">
+                        </div>
+                        <div class="product_card">
                             <div class="product_image">
-                                <img src="assets/images/p-2.jpg" alt="">
+                                <a href="./single-product.html">
+                                    <img src="assets/images/p-1.jpg" alt="">
+                                </a>
                                 <div class="product_actions">
                                     <button class="action">
                                         <i class="material-icons">shopping_cart</i>
@@ -316,40 +353,15 @@
                                     <button class="action">
                                         <i class="material-icons">favorite</i>
                                     </button>
-                                    <button class="action">
+                                    <button class="action" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
                                         <i class="material-icons">visibility</i>
                                     </button>
                                 </div>
                             </div>
                             <div class="product_text">
-                                <h1 class="product_title">عباية ملونة تطريز يدوى</h1>
-                                <div class="rating">
-                                    <i class="material-icons">star</i>
-                                    <i class="material-icons">star</i>
-                                    <i class="material-icons">star</i>
-                                    <i class="material-icons">star</i>
-                                    <i class="material-icons">star_border</i>
-                                </div>
-                                <div class="price">279 ريال</div>
-                            </div>
-                        </a>
-                        <a href="/single-product.html" class="product_card">
-                            <div class="product_image">
-                                <img src="assets/images/p-1.jpg" alt="">
-                                <div class="product_actions">
-                                    <button class="action">
-                                        <i class="material-icons">shopping_cart</i>
-                                    </button>
-                                    <button class="action">
-                                        <i class="material-icons">favorite</i>
-                                    </button>
-                                    <button class="action">
-                                        <i class="material-icons">visibility</i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product_text">
-                                <h1 class="product_title">عباية سوداء تطريز يدوى</h1>
+                                <a href="./single-product.html">
+                                    <h1 class="product_title">عباية سوداء تطريز يدوى</h1>
+                                </a>
                                 <div class="rating">
                                     <i class="material-icons">star</i>
                                     <i class="material-icons">star</i>
@@ -359,10 +371,12 @@
                                 </div>
                                 <div class="price">200 ريال</div>
                             </div>
-                        </a>
-                        <a href="/single-product.html" class="product_card">
+                        </div>
+                        <div class="product_card">
                             <div class="product_image">
-                                <img src="assets/images/p-2.jpg" alt="">
+                                <a href="./single-product.html">
+                                    <img src="assets/images/p-1.jpg" alt="">
+                                </a>
                                 <div class="product_actions">
                                     <button class="action">
                                         <i class="material-icons">shopping_cart</i>
@@ -370,13 +384,15 @@
                                     <button class="action">
                                         <i class="material-icons">favorite</i>
                                     </button>
-                                    <button class="action">
+                                    <button class="action" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
                                         <i class="material-icons">visibility</i>
                                     </button>
                                 </div>
                             </div>
                             <div class="product_text">
-                                <h1 class="product_title">عباية ملونة تطريز يدوى</h1>
+                                <a href="./single-product.html">
+                                    <h1 class="product_title">عباية ملونة تطريز يدوى</h1>
+                                </a>
                                 <div class="rating">
                                     <i class="material-icons">star</i>
                                     <i class="material-icons">star</i>
@@ -386,7 +402,38 @@
                                 </div>
                                 <div class="price">279 ريال</div>
                             </div>
-                        </a>
+                        </div>
+                        <div class="product_card">
+                            <div class="product_image">
+                                <a href="./single-product.html">
+                                    <img src="assets/images/p-2.jpg" alt="">
+                                </a>
+                                <div class="product_actions">
+                                    <button class="action">
+                                        <i class="material-icons">shopping_cart</i>
+                                    </button>
+                                    <button class="action">
+                                        <i class="material-icons">favorite</i>
+                                    </button>
+                                    <button class="action" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+                                        <i class="material-icons">visibility</i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product_text">
+                                <a href="./single-product.html">
+                                    <h1 class="product_title">عباية ملونة تطريز يدوى</h1>
+                                </a>
+                                <div class="rating">
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star_border</i>
+                                </div>
+                                <div class="price">279 ريال</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -441,6 +488,96 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="quick_view_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">تفاصيل المنتج</h1>
+                    <i class="material-icons" data-bs-dismiss="modal" aria-label="Close">cancel</i>
+                </div>
+                <div class="modal-body">
+                    <div class="product_details_wrapper">
+                        <div class="product_gallary">
+                            <div class="gallery_thumbs">
+                                <div class="thumb_image">
+                                    <img src="/assets/images/p-1.jpg" />
+                                </div>
+                                <div class="thumb_image">
+                                    <img src="/assets/images/p-2.jpg" />
+                                </div>
+                                <div class="thumb_image">
+                                    <img src="/assets/images/p-1.jpg" />
+                                </div>
+                            </div>
+                            <div class="big_image">
+                                <img src="/assets/images/p-1.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="product_details_text">
+                            <span class="product_availability">المتاح بالمخزن 10 قطع</span>
+                            <div class="general_details">
+                                <h1 class="product_title">عباية سوداء تطريز يدوى</h1>
+                                <span class="product_price">200 ريال</span>
+                                <span class="product_rating">
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star_border</i>
+                                    <i class="material-icons">star_border</i>
+                                    <i class="material-icons">star_border</i>
+                                </span>
+                            </div>
+                            <div class="product_attributes">
+                                <div class="attribute">
+                                    <label>المقاس:</label>
+                                    <div class="attribute_values">
+                                        <label class="size_filter">
+                                            <input hidden type="radio" name="sizes" checked>
+                                            xl
+                                        </label>
+                                        <label class="size_filter">
+                                            <input hidden type="radio" name="sizes">
+                                            xxl
+                                        </label>
+                                        <label class="size_filter">
+                                            <input hidden type="radio" name="sizes">
+                                            3xl
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="attribute">
+                                    <label>الألوان:</label>
+                                    <div class="attribute_values">
+                                        <label class="color_filter" style="--c: rgba(0, 0, 0, 1)">
+                                            <input hidden type="radio" name="colors" checked>
+                                        </label>
+                                        <label class="color_filter" style="--c: rgba(255, 255, 255, 1)">
+                                            <input hidden type="radio" name="colors">
+                                        </label>
+                                        <label class="color_filter" style="--c: rgba(48, 155, 248, 1)">
+                                            <input hidden type="radio" name="colors">
+                                        </label>
+                                        <label class="color_filter" style="--c: rgb(207, 150, 159, 1)">
+                                            <input hidden type="radio" name="colors">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_actions">
+                                <div class="product_quantity">
+                                    <i class="increase_btn material-icons">add</i>
+                                    <input class="product_quantity_value" type="number" value="1" min="1" />
+                                    <i class="decrease_btn material-icons">remove</i>
+                                </div>
+                                <button class="main_button">اضف إلى السلة</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="assets/library/bootstrap/bootstrap.bundle.min.js"></script>
